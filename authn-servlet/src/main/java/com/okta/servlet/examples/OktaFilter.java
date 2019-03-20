@@ -73,6 +73,7 @@ public class OktaFilter implements Filter {
     }
 
     private boolean isStaticAsset(HttpServletRequest request) {
-        return request.getServletPath().startsWith("/static/");
+        String path = request.getServletPath();
+        return path.startsWith("/static/") || path.equals("/favicon.ico");
     }
 }
