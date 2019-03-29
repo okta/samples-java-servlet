@@ -1,6 +1,6 @@
 # Okta Authentication SDK & Java Servlets
 
-This example shows you how to use the [Okta Java Authentication SDK][] to login a user to a Servlet based application. This is a sample application meant to show how to integration [Okta Java Authentication SDK][] into existing frameworks or applications and is NOT a production ready application (See [OWASP Top Ten Cheat Sheet](https://www.owasp.org/index.php/OWASP_Top_Ten_Cheat_Sheet) for more tips).
+This example shows you how to use the [Okta Java Authentication SDK][] to login a user to a Servlet based application. This is a sample application meant to show how to integrate [Okta Java Authentication SDK][] into existing frameworks or applications and is NOT a production ready application (See [OWASP Top Ten Cheat Sheet](https://www.owasp.org/index.php/OWASP_Top_Ten_Cheat_Sheet) for more tips).
 
 **NOTE:** Using OAuth 2.0 or OpenID Connect to integrate your application instead of this library will require much less work, and has a smaller risk profile. Please see [this guide](https://developer.okta.com/use_cases/authentication/) to see if using this API is right for your use case. You could also use our [Spring Boot Integration](https://github.com/okta/okta-spring-boot), or [Spring Security](https://developer.okta.com/blog/2017/12/18/spring-security-5-oidc) out of the box.
 
