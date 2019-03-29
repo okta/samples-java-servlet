@@ -31,7 +31,23 @@
             <p>If you're viewing this page then you have successfully configured and started this example server.</p>
             <p>This example shows you how to use the <a href="https://github.com/okta/okta-auth-java">Okta
                 Authentication SDK</a> configured for a basic Servlet application.</p>
-            <p>TODO: add disclaimer here.</p>
+
+            <div class="alert alert-warning" role="alert">
+                <p>
+                The Authentication SDK is a convenient wrapper around <a href="https://developer.okta.com/docs/api/resources/authn/">Okta's Authentication API</a>, these APIs are powerful and useful if you need to achieve one of these cases:
+                </p>
+                <ul>
+                    <li>You have an existing application that needs to accept primary credentials (username and password) and do custom logic before communicating with Okta.</li>
+                    <li>You have significantly custom authentication workflow or UI needs, such that Okta's default login page or <a href="https://github.com/okta/okta-signin-widget">Okta's Sign-In Widget</a> do not give you enough flexibility.</li>
+                </ul>
+
+                <p>
+                The power of this SDK comes with more responsibility and maintenance: you will have to design your authentication workflow and UIs by hand, respond to all relevant states in Okta's authentication state machine, and keep up to date with new features and states in Okta.
+                </p>
+            <p>
+            Otherwise, most authentication use cases can be handled by <a href="https://developer.okta.com/authentication-guide/implementing-authentication/">OAuth/OIDC workflows</a>, for which we advise using <a href="https://github.com/okta/okta-spring-boot">Okta's Spring Boot Starter</a> or other OIDC/OAuth 2.0 library.
+            </p>
+            </div>
         </div>
 
         <form method="get" action="<c:url value="/authn/login" />">
