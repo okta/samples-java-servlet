@@ -19,13 +19,45 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.okta.servlet.examples</groupId>
-    <artifactId>aggregator</artifactId>
+    <artifactId>servlet-aggregator</artifactId>
     <version>1-SNAPSHOT</version>
     <name>Okta Servlet Samples :: Aggregator</name>
     <description>See README for details.</description>
     <packaging>pom</packaging>
 
     <modules>
-<!--         <module>authn-servlet</module> -->
+        <module>authn-servlet</module>
     </modules>
+
+    <build>
+        <plugins>
+             <plugin>
+                <groupId>com.mycila</groupId>
+                <artifactId>license-maven-plugin</artifactId>
+                <version>3.0</version>
+                <dependencies>
+                    <dependency>
+                        <groupId>com.okta</groupId>
+                        <artifactId>okta-parent-build-support</artifactId>
+                        <version>14</version>
+                    </dependency>
+                </dependencies>
+                <configuration>
+                    <aggregate>true</aggregate>
+                    <skipExistingHeaders>true</skipExistingHeaders>
+                    <header>license/header.txt</header>
+                    <headerDefinitions>
+                        <headerDefinition>license/header_format.xml</headerDefinition>
+                    </headerDefinitions>
+                    <properties>
+                        <organization.name>Okta</organization.name>
+                        <year>2019</year>
+                    </properties>
+                    <excludes>
+                        <exclude>**/*.txt</exclude>
+                    </excludes>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 </project>
