@@ -33,19 +33,20 @@
                 Authentication SDK</a> configured for a basic Servlet application.</p>
 
             <div class="alert alert-warning" role="alert">
+                <h4 class="alert-heading">Is This Library Right for Me?</h4>
                 <p>
-                The Authentication SDK is a convenient wrapper around <a href="https://developer.okta.com/docs/api/resources/authn/">Okta's Authentication API</a>, these APIs are powerful and useful if you need to achieve one of these cases:
+                The Authentication SDK is a convenient HTTP client wrapper for  <a href="https://developer.okta.com/docs/api/resources/authn/">Okta's Authentication API</a>. These APIs are powerful and useful if you need to achieve one of these cases:
                 </p>
                 <ul>
                     <li>You have an existing application that needs to accept primary credentials (username and password) and do custom logic before communicating with Okta.</li>
-                    <li>You have significantly custom authentication workflow or UI needs, such that Okta's default login page or <a href="https://github.com/okta/okta-signin-widget">Okta's Sign-In Widget</a> do not give you enough flexibility.</li>
+                    <li>You have significantly custom authentication workflow or UI needs, such that Okta's hosted sign-in page or <a href="https://github.com/okta/okta-signin-widget">Sign-In Widget</a> do not give you enough flexibility.</li>
                 </ul>
 
                 <p>
                 The power of this SDK comes with more responsibility and maintenance: you will have to design your authentication workflow and UIs by hand, respond to all relevant states in Okta's authentication state machine, and keep up to date with new features and states in Okta.
                 </p>
             <p>
-            Otherwise, most authentication use cases can be handled by <a href="https://developer.okta.com/authentication-guide/implementing-authentication/">OAuth/OIDC workflows</a>, for which we advise using <a href="https://github.com/okta/okta-spring-boot">Okta's Spring Boot Starter</a> or other OIDC/OAuth 2.0 library.
+            Otherwise, most applications can use the Okta hosted sign-in page or the Sign-in Widget. For these cases, you should use <a href="https://github.com/okta/okta-spring-boot">Okta's Spring Boot Starter</a> or other OIDC/OAuth 2.0 library.
             </p>
             </div>
         </div>
