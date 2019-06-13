@@ -59,4 +59,4 @@ curl http://localhost:8000/api/messages -H"Authorization: Bearer ${accessToken}"
 [Implicit Flow]: https://developer.okta.com/authentication-guide/implementing-authentication/implicit
 [Okta JWT Verifier for Java]: https://github.com/okta/okta-jwt-verifier-java
 [OpenID Connect Debugger]: https://oidcdebugger.com/
-[blog post for instructions]: https://developer.okta.com/blog/2018/12/18/secure-spring-rest-api#generate-tokens-in-your-spring-rest-api
+[blog post]: https://developer.okta.com/blog/2018/12/18/secure-spring-rest-api#generate-tokens-in-your-spring-rest-api
