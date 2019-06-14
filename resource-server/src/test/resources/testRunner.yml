@@ -16,8 +16,6 @@
 scenarios:
   implicit-flow-local-validation:
     command: mvn
-    ports:
-      applicationPort: 8000
     args:
     - -Dserver.port=${applicationPort}
     - -Dokta.oauth2.issuer=https://localhost:${mockHttpsPort}/oauth2/default

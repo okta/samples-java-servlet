@@ -47,9 +47,11 @@ public class ResourceServerApplication {
         // scan everything for annotations, jstl, web fragments, etc
         webapp.setAttribute("org.eclipse.jetty.server.webapp.ContainerIncludeJarPattern", ".*");
 
-        Server server = new Server(8000);
+        int port = Integer.parseInt(System.getProperty("server.port"));
+        Server server = new Server(port);
         server.setHandler(webapp);
         server.start();
+        System.out.println("Web app started: http://localhost:" + port + "/");
         server.join();
     }
 }
