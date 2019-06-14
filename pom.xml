@@ -27,6 +27,7 @@
 
     <modules>
         <module>authn-servlet</module>
+        <module>resource-server</module>
     </modules>
 
     <build>
