@@ -74,6 +74,7 @@ public class OktaBearerFilter implements Filter {
 
                         // continue
                         chain.doFilter(request, response);
+                        return;
                     } catch (JwtVerificationException e) {
                         request.getServletContext().log("Invalid access token", e);
                     }
