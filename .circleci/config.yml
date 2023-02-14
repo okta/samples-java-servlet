@@ -6,7 +6,6 @@ aliases:
     - checkout
     - run: java -version
     - run:
-        name: Install latest version of ChromeDriver Sample
         command: |
             sudo wget https://chromedriver.storage.googleapis.com/2.31/chromedriver_linux64.zip
             sudo unzip chromedriver_linux64.zip
@@ -15,7 +14,6 @@ aliases:
             sudo chmod 777 /usr/bin/chromedriver
             mvn -B -Dorg.slf4j.simpleLogger.log.org.apache.maven.cli.transfer.Slf4jMavenTransferListener=warn -Pokta-tck dependency:resolve-plugins
             mvn -B -Dorg.slf4j.simpleLogger.log.org.apache.maven.cli.transfer.Slf4jMavenTransferListener=warn -Pokta-tck install
-
 
 jobs:
 
