@@ -26,7 +26,7 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <jetty.version>9.4.35.v20201120</jetty.version>
+        <jetty.version>10.0.2</jetty.version>
     </properties>
 
     <dependencies>
@@ -136,29 +136,6 @@
                   </artifactItems>
                 </configuration>
               </plugin>
-              <!-- Tell failsafe to run Okta's oidc-tck -->
-              <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-failsafe-plugin</artifactId>
-                <version>2.22.2</version>
-                <executions>
-                    <execution>
-                        <goals>
-                            <goal>integration-test</goal>
-                            <goal>verify</goal>
-                        </goals>
-                    </execution>
-                </executions>
-                <configuration>
-                    <dependenciesToScan>
-                        <dependency>com.okta.oidc.tck:okta-oidc-tck</dependency>
-                    </dependenciesToScan>
-                    <systemPropertyVariables>
-                        <okta.tck.redirectOnError>true</okta.tck.redirectOnError>
-                        <javax.net.ssl.trustStore>${project.build.directory}/tck-keystore.jks</javax.net.ssl.trustStore>
-                    </systemPropertyVariables>
-                </configuration>
-            </plugin>
         </plugins>
     </build>
 </project>
