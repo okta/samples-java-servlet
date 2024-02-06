@@ -26,7 +26,7 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <jetty.version>10.0.6</jetty.version>
+        <jetty.version>10.0.14</jetty.version>
     </properties>
 
     <dependencies>
@@ -73,8 +73,13 @@
         <dependency>
             <groupId>ch.qos.logback</groupId>
             <artifactId>logback-classic</artifactId>
-            <version>1.2.3</version>
+            <version>1.4.9</version>
             <scope>runtime</scope>
+        </dependency>
+        <dependency>
+            <groupId>ch.qos.logback</groupId>
+            <artifactId>logback-core</artifactId>
+            <version>1.4.9</version>
         </dependency>
 
         <!-- Okta's standard OAuth/OIDC tests, you do not need this in your project -->
@@ -83,6 +88,12 @@
             <artifactId>okta-oidc-tck</artifactId>
             <version>0.5.9</version>
             <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>commons-codec</groupId>
+            <artifactId>commons-codec</artifactId>
+            <version>1.16.0</version>
         </dependency>
     </dependencies>
 
