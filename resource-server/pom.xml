@@ -26,7 +26,7 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <jetty.version>10.0.16</jetty.version>
+        <jetty.version>12.0.16</jetty.version>
     </properties>
 
     <dependencies>
@@ -34,12 +34,12 @@
         <dependency>
             <groupId>com.okta.jwt</groupId>
             <artifactId>okta-jwt-verifier</artifactId>
-            <version>0.5.8</version>
+            <version>0.5.10</version>
         </dependency>
         <dependency>
             <groupId>com.okta.jwt</groupId>
             <artifactId>okta-jwt-verifier-impl</artifactId>
-            <version>0.5.8</version>
+            <version>0.5.10</version>
             <scope>runtime</scope>
         </dependency>
 
